@@ -1146,6 +1146,13 @@ nav {
     flex-wrap: wrap;
 }
 
+#cta-buttons-imp {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 .btn-white {
     background: #fefefd;
     color: #000000;
