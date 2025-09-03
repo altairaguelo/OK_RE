@@ -3,9 +3,771 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Opportunity Knocks | Connect. Match. Succeed.</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Opportunity Knocks</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#success-stories">Success Stories</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <div class="cta-nav">
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Where Talent Meets Opportunity</h1>
+                <p>The most intuitive internship matching platform connecting ambitious students with forward-thinking companies. Find your perfect match in minutes, not months.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Active Students</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Partner Companies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Match Success Rate</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-white">Find Internships</a>
+                    <a href="#" class="btn btn-outline">Hire Students</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">SA</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem;">Sarah Anderson</h4>
+                            <p style="margin: 0; color: #666; font-size: 0.9rem;">Stanford University</p>
+                        </div>
+                    </div>
+                    <div style="background: #e8f4fd; color: #0369a1; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 0.5rem;">Open to Paid Internship</div>
+                    <p style="margin: 0.5rem 0; font-size: 0.9rem;"><strong>Major:</strong> Computer Science • <strong>Graduation:</strong> 2025</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.5rem 0;">
+                        <span style="background: #f0f9ff; color: #0369a1; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">Python</span>
+                        <span style="background: #f0f9ff; color: #0369a1; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">React</span>
+                        <span style="background: #f0f9ff; color: #0369a1; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">Machine Learning</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">MJ</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem;">Marcus Johnson</h4>
+                            <p style="margin: 0; color: #666; font-size: 0.9rem;">UC Berkeley</p>
+                        </div>
+                    </div>
+                    <div style="background: #dcfce7; color: #166534; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 0.5rem;">Open to Paid Internship</div>
+                    <p style="margin: 0.5rem 0; font-size: 0.9rem;"><strong>Major:</strong> Marketing • <strong>Graduation:</strong> 2025</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.5rem 0;">
+                        <span style="background: #f0fdf4; color: #166534; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">Social Media</span>
+                        <span style="background: #f0fdf4; color: #166534; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">Analytics</span>
+                        <span style="background: #f0fdf4; color: #166534; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">Content Creation</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">EC</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem;">Emily Chen</h4>
+                            <p style="margin: 0; color: #666; font-size: 0.9rem;">MIT</p>
+                        </div>
+                    </div>
+                    <div style="background: #fef3c7; color: #92400e; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 0.5rem;">Open to Paid Internship</div>
+                    <p style="margin: 0.5rem 0; font-size: 0.9rem;"><strong>Major:</strong> Data Science • <strong>Graduation:</strong> 2026</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.5rem 0;">
+                        <span style="background: #fffbeb; color: #92400e; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">SQL</span>
+                        <span style="background: #fffbeb; color: #92400e; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">Tableau</span>
+                        <span style="background: #fffbeb; color: #92400e; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.7rem;">Statistics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Benefits Section -->
+    <section class="timeline-benefits" id="benefits">
+        <div class="timeline-container">
+            <div class="timeline-header">
+                <h2>How Opportunity Knocks Transforms Hiring & Career Building</h2>
+                <p>Discover the powerful benefits we provide to companies and students alike</p>
+            </div>
+
+            <!-- Timeline Track -->
+            <div class="timeline-track">
+                <div class="timeline-line">
+                    <div class="timeline-progress" id="timelineProgress"></div>
+                </div>
+                
+                <!-- Timeline Items -->
+                <div class="timeline-item" data-panel="hiring-1">
+                    <div class="timeline-dot hiring-dot">
+                        <div class="timeline-icon">🏢</div>
+                    </div>
+                    <div class="timeline-panel hiring-panel">
+                        <div class="panel-content">
+                            <div class="panel-icon">🎯</div>
+                            <h3>Talent Diversity</h3>
+                            <p>Access a curated selection of skilled, motivated student interns from universities across multiple disciplines with fresh perspectives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-panel="student-1">
+                    <div class="timeline-dot student-dot">
+                        <div class="timeline-icon">👨‍🎓</div>
+                    </div>
+                    <div class="timeline-panel student-panel">
+                        <div class="panel-content">
+                            <div class="panel-icon">🔍</div>
+                            <h3>Internships For You</h3>
+                            <p>Internship opportunities are looking for your specific skills when contacting you. No more endless applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-panel="hiring-2">
+                    <div class="timeline-dot hiring-dot">
+                        <div class="timeline-icon">🏢</div>
+                    </div>
+                    <div class="timeline-panel hiring-panel">
+                        <div class="panel-content">
+                            <div class="panel-icon">⏰</div>
+                            <h3>Save Time</h3>
+                            <p>Our algorithm finds the perfect fit based on your specific needs, saving you hours of searching, resume reading and candidate interviewing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-panel="student-2">
+                    <div class="timeline-dot student-dot">
+                        <div class="timeline-icon">👨‍🎓</div>
+                    </div>
+                    <div class="timeline-panel student-panel">
+                        <div class="panel-content">
+                            <div class="panel-icon">⏰</div>
+                            <h3>Save Time</h3>
+                            <p>Fill out your profile and wait for internships to reach out. No more endless applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-panel="hiring-3">
+                    <div class="timeline-dot hiring-dot">
+                        <div class="timeline-icon">🏢</div>
+                    </div>
+                    <div class="timeline-panel hiring-panel">
+                        <div class="panel-content">
+                            <div class="panel-icon">🛡️</div>
+                            <h3>Risk Free</h3>
+                            <p>Only pay when you find your match. We ensure you're investing in real talent, not just possibilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-panel="student-3">
+                    <div class="timeline-dot student-dot">
+                        <div class="timeline-icon">👨‍🎓</div>
+                    </div>
+                    <div class="timeline-panel student-panel">
+                        <div class="panel-content">
+                            <div class="panel-icon">🚀</div>
+                            <h3>Hands On Experience</h3>
+                            <p>Get real world experience in your field of expertise as you level up in your career.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="how-it-works-grid">
+                <!-- Looking for Talent Section -->
+                <div class="talent-section">
+                    <div class="section-header">
+                        <h2>Looking for Talent?</h2>
+                    </div>
+                    
+                    <div class="steps-container">
+                        <div class="step-item slide-in-left" data-delay="0">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Share Company Details</h3>
+                                <p>Share details about your company, industry focus, and the specific skills you need for your internship position.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item slide-in-left" data-delay="200">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Review Recommendations</h3>
+                                <p>Review our algorithm's top recommendations and use our filters to refine your search.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item slide-in-left" data-delay="400">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Start Collaborating</h3>
+                                <p>Select a student and start collaborating on your projects.</p>
+                            </div>
+                        </div>
+
+                        <div class="cta-button slide-in-left" data-delay="600">
+                            <a href="#" class="btn btn-secondary">Find Talent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Looking for Internships Section -->
+                <div class="internships-section">
+                    <div class="section-header">
+                        <h2>Looking for Internships?</h2>
+                    </div>
+                    
+                    <div class="steps-container">
+                        <div class="step-item slide-in-right" data-delay="0">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Profile Building</h3>
+                                <p>Share your unique skills, background, and industry expertise to create a standout profile that attracts opportunities.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item slide-in-right" data-delay="200">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Interview</h3>
+                                <p>Engage in an interview process to showcase your experience level and personality effectively.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item slide-in-right" data-delay="400">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Get Opportunities</h3>
+                                <p>No more endless applications, companies interested in your profile reach out to you with internships.</p>
+                            </div>
+                        </div>
+
+                        <div class="cta-button slide-in-right" data-delay="600">
+                            <a href="#" class="btn btn-primary">Build Your Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <!-- Interactive Demo -->
+            <div class="demo-interface fade-in">
+                <h3 style="margin-bottom: 1rem; text-align: center;">Try Our Talent Search</h3>
+                <input type="text" class="search-bar" placeholder="Search for a student... (e.g., 'Computer Science student in Atlanta')" id="demoSearch">
+                <div class="match-cards" id="matchResults" style="display: none;">
+                    <div class="match-card">
+                        <div class="match-percentage">95%</div>
+                        <h4>Frontend Developer Intern</h4>
+                        <p>TechFlow • Remote</p>
+                    </div>
+                    <div class="match-card">
+                        <div class="match-percentage">89%</div>
+                        <h4>Full-Stack Intern</h4>
+                        <p>InnovateLab • San Francisco</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>What Our Users Say</h2>
+                <p>Real stories from students and companies who found success through Opportunity Knocks</p>
+            </div>
+
+            <div class="testimonials-carousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">❝</div>
+                            <p>"I have had the best experience with Jack. I have 3 students building my app. I could not be happier!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23667eea'/%3E%3Ctext x='50' y='58' text-anchor='middle' fill='white' font-size='36' font-weight='bold'%3EDB%3C/text%3E%3C/svg%3E" alt="Dana Bryant">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Dana Bryant</h4>
+                                    <p>Founder of Zazu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">❝</div>
+                            <p>"Found my dream internship at Google in just 2 weeks! The matching algorithm is incredibly accurate and saved me months of applications."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2310b981'/%3E%3Ctext x='50' y='58' text-anchor='middle' fill='white' font-size='36' font-weight='bold'%3ESA%3C/text%3E%3C/svg%3E" alt="Sarah Anderson">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Anderson</h4>
+                                    <p>Computer Science Student, Stanford</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">❝</div>
+                            <p>"As a startup, finding quality interns was always challenging. Opportunity Knocks connected us with amazing talent that helped scale our product."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23f59e0b'/%3E%3Ctext x='50' y='58' text-anchor='middle' fill='white' font-size='36' font-weight='bold'%3EMR%3C/text%3E%3C/svg%3E" alt="Mike Rodriguez">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Mike Rodriguez</h4>
+                                    <p>CTO, TechFlow Innovations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">❝</div>
+                            <p>"The interview process was so smooth and the company reached out to me directly. No more endless job applications!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23ef4444'/%3E%3Ctext x='50' y='58' text-anchor='middle' fill='white' font-size='36' font-weight='bold'%3EEC%3C/text%3E%3C/svg%3E" alt="Emily Chen">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Emily Chen</h4>
+                                    <p>Data Science Student, MIT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-nav">
+                    <button class="nav-btn prev-btn" id="prevBtn">‹</button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+                    <button class="nav-btn next-btn" id="nextBtn">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about Opportunity Knocks</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>How are students selected for the platform?</h3>
+                        <div class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Every student undergoes a thorough verification process to ensure they're currently enrolled students with the skills they claim. We partner with universities to identify promising talent across various disciplines.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>What happens after I subscribe?</h3>
+                        <div class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll gain immediate access to contact information for the student. From there, you can reach out directly to discuss internship details, expectations, and start dates.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Can I cancel my subscription?</h3>
+                        <div class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely, you can cancel your monthly subscription at any time through your dashboard settings.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>What if none of the matches are right for me?</h3>
+                        <div class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our algorithm continues learning from your preferences. If your initial matches aren't perfect, we'll refine your recommendations based on your feedback to find better candidates. You can use our filters to further refine your search.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>What if I don't hear back from a company?</h3>
+                        <div class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We encourage you to update your profile as you progress professionally to showcase new and refined abilities.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Are these internships paid?</h3>
+                        <div class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer both paid and unpaid internships depending on what you are looking for.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>About Us</h2>
+                <p>OK has one goal, to help you find the right match.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>Whether you're looking to get an internship, or to find talent, we simplify the entire process.</p>
+                    
+                    <p>Looking to save time with finding talent? We let you select who you want to work with. No need to worry about job postings, application reviews, payroll or a flooded inbox. We take care of it so you can focus on what matters most.</p>
+                    
+                    <p>Tired of filling out endless internship applications with no response? We've been there too. We open the door for endless opportunities without you having to chase them down. Tell us about yourself and wait for an opportunity to come to you.</p>
+                </div>
+
+                <div class="support-section fade-in">
+                    <h3>We're Here to Support Your Journey</h3>
+                    <p>Have questions about finding your ideal Talent or opportunity? Our team is ready to help you navigate the platform.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:support@opportunityknockshq.com" class="contact-link">support@opportunityknockshq.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Find Your Perfect Match?</h2>
+            <p>Join thousands of students and companies who've found success through Opportunity Knocks</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-white">Students - Get Started Free</a>
+                <a href="#" class="btn btn-primary">Companies - Search Talent</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Opportunity Knocks</h4>
+                    <p>Connecting the next generation of talent with innovative companies worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>For Students</h4>
+                    <a href="#">Browse Internships</a>
+                    <a href="#">Career Resources</a>
+                    <a href="#">Success Stories</a>
+                    <a href="#">Help Center</a>
+                </div>
+                <div class="footer-section">
+                    <h4>For Companies</h4>
+                    <a href="#">Post Internships</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Recruiter Tools</a>
+                    <a href="#">Contact Sales</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Opportunity Knocks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Demo search functionality
+        const demoSearch = document.getElementById('demoSearch');
+        const matchResults = document.getElementById('matchResults');
+
+        demoSearch.addEventListener('input', (e) => {
+            if (e.target.value.length > 3) {
+                matchResults.style.display = 'flex';
+                // Add typing effect
+                gsap.fromTo(matchResults, 
+                    { opacity: 0, y: 20 }, 
+                    { opacity: 1, y: 0, duration: 0.5 }
+                );
+            } else {
+                matchResults.style.display = 'none';
+            }
+        });
+
+        // GSAP animations for hero elements
+        gsap.timeline()
+            .from('.hero-content h1', { duration: 1, y: 50, opacity: 0, ease: 'power3.out' })
+            .from('.hero-content p', { duration: 1, y: 30, opacity: 0, ease: 'power3.out' }, '-=0.5')
+            .from('.hero-stats', { duration: 1, y: 30, opacity: 0, ease: 'power3.out' }, '-=0.5')
+            .from('.cta-buttons', { duration: 1, y: 30, opacity: 0, ease: 'power3.out' }, '-=0.5')
+            .from('.floating-card', { duration: 1.5, y: 100, opacity: 0, ease: 'power3.out', stagger: 0.2 }, '-=1');
+
+        // How It Works scroll animations
+        const howItWorksObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const section = entry.target;
+                    const stepItems = section.querySelectorAll('.step-item');
+                    const ctaButton = section.querySelector('.cta-button');
+                    
+                    // Animate step items with staggered delay
+                    stepItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('animate');
+                        }, index * 200);
+                    });
+                    
+                    // Animate CTA button last
+                    setTimeout(() => {
+                        if (ctaButton) {
+                            ctaButton.classList.add('animate');
+                        }
+                    }, stepItems.length * 200 + 200);
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        // Observe both sections
+        document.querySelectorAll('.talent-section, .internships-section').forEach(section => {
+            howItWorksObserver.observe(section);
+        });
+
+        // Timeline scroll animations
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add delay to see the animation
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, 300);
+                }
+            });
+        }, {
+            threshold: 0.8, // Wait until 80% visible
+            rootMargin: '0px 0px -200px 0px' // Trigger later
+        });
+
+        // Observe all timeline items
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            timelineObserver.observe(item);
+        });
+
+        // Progressive timeline animation as user scrolls
+        window.addEventListener('scroll', () => {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+
+            timelineItems.forEach((item, index) => {
+                const itemTop = item.offsetTop;
+                const itemHeight = item.offsetHeight;
+                
+                // Check if item is more into viewport (changed threshold)
+                if (scrollTop + windowHeight > itemTop + itemHeight / 2) {
+                    setTimeout(() => {
+                        item.classList.add('active');
+                    }, index * 500); // Increased delay to 500ms between items
+                }
+            });
+        });
+
+        // Testimonials Carousel
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.classList.remove('active', 'prev');
+                if (i === index) {
+                    testimonial.classList.add('active');
+                } else if (i < index) {
+                    testimonial.classList.add('prev');
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        // Event listeners for testimonials
+        if (nextBtn) {
+            nextBtn.addEventListener('click', nextTestimonial);
+        }
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', prevTestimonial);
+        }
+
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentTestimonial = index;
+                showTestimonial(currentTestimonial);
+            });
+        });
+
+        // Auto-advance testimonials
+        setInterval(nextTestimonial, 5000);
+
+        // FAQ Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.closest('.faq-item');
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
