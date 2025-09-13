@@ -38,6 +38,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    vertical-align: middle;
 }
 
 .logo {
@@ -48,9 +49,23 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: none;
+    display: flex;
+    /* align-items: center; */
 }
 
 .logo:hover {
+    cursor: pointer;
+}
+
+.logoImg {
+    height: auto;
+    width: 5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    bottom: 5px;
+}
+
+.logoImg:hover {
     cursor: pointer;
 }
 
