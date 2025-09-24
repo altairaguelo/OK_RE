@@ -471,6 +471,11 @@ nav {
     color: white;
 }
 
+.timeline-icon img {
+    width: 25px;
+    height: 25px;
+} 
+
 .timeline-panel {
     width: 45%;
     position: relative;
@@ -545,6 +550,11 @@ nav {
 .panel-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.panel-icon img {
+    width: 30px;
+    height: 30px;
 }
 
 .panel-content h3 {
