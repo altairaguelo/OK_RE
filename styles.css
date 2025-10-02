@@ -806,9 +806,15 @@ nav {
 /* Testimonials Section */
 .testimonials {
     padding: 8rem 2rem;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background-color: #f8fafc;
+    /* background: red; */
     position: relative;
     scroll-margin-top: 5rem;
+    transition: background-color 0.75s ease-in-out;
+}
+
+.testimonials.in-view {
+    background: #fdaf64;
 }
 
 .section-header {
@@ -990,7 +996,12 @@ nav {
 /* FAQ Section */
 .faq {
     padding: 8rem 2rem;
-    background: #fefefd;
+    background-color: #fefefd;
+    transition: background-color 0.75s ease-in-out;
+}
+
+.faq.in-view {
+    background: #3db0ff;
 }
 
 .faq-container {
@@ -1101,8 +1112,14 @@ nav {
 /* About Us Section */
 .about-us {
     padding: 8rem 2rem;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background-color: #f8fafc;
     scroll-margin-top: 5rem;
+     transition: background-color 0.75s ease-in-out;
+}
+
+.about-us.in-view {
+    background-color: #fdaf64;
+    /* background-color: #3db0ff; */
 }
 
 .about-content {

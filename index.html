@@ -794,6 +794,36 @@
                 }
             });
         });
+
+        //Scroll Background Color Change Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const testimonialsSection = document.querySelector('.testimonials');
+            const faqSection = document.querySelector('.faq');
+            const aboutUsSection = document.querySelector('.about-us');
+
+            const options = {
+                root: null,
+                threshold: 0.50,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        // console.log('Testimonials section is in view');
+                    }
+                    else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            }, options);
+
+            observer.observe(testimonialsSection);
+            observer.observe(faqSection);
+            observer.observe(aboutUsSection);
+        });
+
     </script>
 </body>
 </html>
