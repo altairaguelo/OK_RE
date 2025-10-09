@@ -151,9 +151,8 @@ nav {
     }
 
     .logoImg {
-        width: 60%;
-        height: 60%;
-        object=fit: none;
+        width: 50%;
+        height: 50%;
     }
     
     .logo p{
